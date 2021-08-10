@@ -7,7 +7,7 @@ Service -
 
 
 ## To Run Development server
-
+Run `npm install`
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 **Note**: Once you write anything in the textArea - in order to change the tree , please click outside of the textArea (blur) event.
