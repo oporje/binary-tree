@@ -87,6 +87,7 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
+              "src",
               "src/favicon.ico",
               "src/assets"
             ],
@@ -124,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "binary-tree"
+  "defaultProject": "binary-tree",
+  "cli": {
+    "analytics": false
+  }
 }

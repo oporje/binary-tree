@@ -1,0 +1,10 @@
+<div class="binary-tree-container">
+  <textarea rows=15 cols=35 (change)="onTextChange($event)" [value]=fileData>
+  </textarea>
+
+  <ul>
+    <li *ngFor="let item of displayArr">
+      {{item}}
+    </li>
+  </ul>
+</div>
