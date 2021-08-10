@@ -38,6 +38,8 @@ export class BinaryTreeComponent implements OnInit {
     this.fileReaderService.getTextFromFile().subscribe((data) => {
       this.fileData = data;
       this.createTree(data);
+    }, err => {
+      console.warn('Error reading file' + err);
     });
   }
 
