@@ -1,6 +1,7 @@
 import { OnInit, Component } from '@angular/core';
 import { FileReaderService } from '../../services/FileReader.service';
 
+// class model
 export class Node {
   word;
   occurences;
@@ -46,7 +47,7 @@ export class BinaryTreeComponent implements OnInit {
   // on text change of text area
   onTextChange(event): void {
     this.displayArr = [];
-    if (event && event.target && Boolean(event.target.value.trim())) {
+    if (Boolean(event?.target?.value?.trim())) {
       this.fileData = event.target.value;
       this.createTree(this.fileData);
     }
@@ -87,6 +88,7 @@ export class BinaryTreeComponent implements OnInit {
     });
   }
 
+  // recursively call printNodes to print tree
   printNodes(node, spaceCount): void {
     if (node) {
       const count = spaceCount + 4;
